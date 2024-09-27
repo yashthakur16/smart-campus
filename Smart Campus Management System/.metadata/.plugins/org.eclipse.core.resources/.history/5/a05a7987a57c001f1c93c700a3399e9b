@@ -1,0 +1,23 @@
+package com.grey.smartCampus.Service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.grey.smartCampus.Model.Attendance;
+import com.grey.smartCampus.Repository.AttendanceRepository;
+
+@Service
+public class AttendanceService 
+{
+	@Autowired
+	AttendanceRepository ar;
+
+	public List<Attendance> getById(int id) {
+		
+	}
+	
+   
+    
+}

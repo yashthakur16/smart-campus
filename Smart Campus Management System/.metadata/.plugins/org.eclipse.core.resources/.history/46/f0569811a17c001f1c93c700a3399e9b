@@ -1,0 +1,5 @@
+package com.grey.smartCampus.Model;
+
+public class Attendance {
+
+}

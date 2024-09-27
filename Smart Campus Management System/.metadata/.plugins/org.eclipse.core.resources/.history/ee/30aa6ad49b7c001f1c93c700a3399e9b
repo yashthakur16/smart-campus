@@ -1,0 +1,17 @@
+package com.grey.smartCampus.Service;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+import com.grey.smartCampus.Model.Student;
+
+@Service
+public class StudentService 
+{
+
+	public ResponseEntity<String> addStudent(Student s) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

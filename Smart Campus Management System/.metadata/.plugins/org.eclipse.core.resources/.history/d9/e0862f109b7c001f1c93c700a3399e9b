@@ -1,0 +1,8 @@
+package com.grey.smartCampus.Controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class StudentController {
+
+}

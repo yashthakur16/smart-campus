@@ -1,0 +1,30 @@
+package com.grey.smartCampus.Model;
+
+import jakarta.persistence.*;
+import java.time.LocalDate;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+@Entity
+public class Student {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // Auto-generates student_id
+    private Long student_id;
+
+    private String Full_name;
+    
+    private String phone_no;
+    private LocalDate birthday;
+    private String blood_group;
+    private String address;
+    private String email;
+
+    // Getters and Setters
+
+  
+    
+    
+}

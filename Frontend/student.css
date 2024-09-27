@@ -1,0 +1,822 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.info-box {
+    margin-top: 20px;
+}
+
+.info-box p {
+    margin: 5px 0;
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.header
+{
+    
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-evenly; /* Ensure the menu button is at the end */
+    align-items: center;
+    
+}
+
+.heading
+{
+    
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 40%;
+    
+    height: 100%;
+}
+
+#headingimg
+{
+    
+    height: 25%;
+    margin-bottom: 0.6rem;
+    margin-right: 0.2rem;
+        
+}
+
+#heading1
+{
+    
+    height: 40%;
+    font-size: 1.6rem;
+    align-self: center;
+    justify-self: center;
+}
+
+.navigation
+{
+    height: 60px;
+    width: 100vw;
+    display: none;
+    background-color: blue;
+    color: white;
+    
+}
+
+#nav1
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;  
+}
+
+@media screen and (min-width:768px) 
+{
+    .navigation
+    {
+        display: flex;
+    }    
+}
+
+#ul1
+{
+    
+    display: flex;
+    list-style-type: none;
+    
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.contact
+{
+    
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+   
+
+}
+
+#b1
+{
+   
+    background-color: blue;
+    border:black;
+    border: none;
+    border-radius: 0.375rem;
+    transform: all 0.1s;
+    padding: 0.3rem 0.8rem;
+    color: white;
+
+}
+
+#b1:hover
+{
+    background-color: #3134f0;
+}
+
+
+.menu-button
+{
+    display: none;
+    margin-right: 1rem;
+    background-color:white;
+    border: none;
+}
+
+@media screen and (max-width:768px) 
+{
+    .menu-button
+    {
+        display: block;
+    }    
+}
+
+
+
+.menu-icon
+{
+   height: 1rem;
+   width: 1rem;
+   display: flex;
+   justify-content:end;
+   align-items: center; 
+}
+
+.section
+{
+    display: flex;
+    width: 100%;
+    height: 78vh;
+}
+
+@media screen and (max-width:800px) 
+{
+    .section
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 78vh;
+    }  
+}
+
+.section-item1
+{   
+    width: 50%;
+    height: 70vh;
+    margin-left: 14rem;
+    margin-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    animation-name: slidein;
+    animation-duration: 2s;
+}
+
+@keyframes slidein 
+{
+    from {
+        translate: -150vw 0;
+      }
+    
+      to {
+        translate: 0 0;
+      }
+    
+}
+
+.section-item2
+{
+    
+    height: 70vh;
+    width: 50%;
+    margin-left: 5rem;
+    margin-right: 11rem;
+    display: flex;
+    justify-content:end;
+
+}
+
+#section-img
+{
+    width: 90%;
+    height: 100%;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 8px black;
+}
+
+#section-p1
+{
+    font-size: 1rem;
+   
+    height: 20%;
+    padding-top: 5rem;
+    color: blue;
+    
+}
+
+#section-p2
+{
+    font-size: 3.5rem;
+    width: 120%;
+   
+    height: 30%;
+    padding-top: 1rem;
+}
+
+#section-p3
+{
+    font-size: 1rem;
+    
+    height: 30%;
+    padding-top: 1.5rem;
+    width: 90%;
+}
+
+#section-p4
+{
+    font-size: 1rem;
+    
+    height: 20%;
+    display: flex;
+}
+
+#section-b1
+{
+   
+    background-color: blue;
+    
+    border: none;
+    border-radius: 0.375rem;
+    padding: 0.5rem 0.8rem;
+    color: white;
+    height:40%;
+    margin-right: 1rem;
+}
+
+#section-b2
+{
+   
+    background-color: black;
+   
+    border: none;
+    border-radius: 0.375rem;
+    transform: all 0.1s;
+    padding: 0.5rem 0.8rem;
+    color: white;
+    height:40%;
+
+}
+
+.section2
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation-name: slidein;
+    animation-duration: 2s;
+}
+
+#section2-h1
+{
+    font-size: 1.8rem;
+   
+}
+
+.section2-item1
+{
+    display: flex;
+    width: 50%;
+    height:8vh;
+    border: 1px solid black;
+    background-color:rgb(184, 184, 184);
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.google
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 70%;
+    width:25%;
+}
+
+.microsoft
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 70%;
+    width:25%;
+}
+
+.linkedin
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 70%;
+    width:25%;
+}
+
+.vector
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 70%;
+    width:25%;
+}
+
+#logo-img
+{
+    height:80%;
+    width: 25%;
+}
+
+.logo-text
+{
+    font-size: 1.3rem;
+}
+
+.cardsection
+{
+    background-color:rgb(184, 184, 184);
+    height: 115vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.card-title
+{
+    font-size: 2.5rem;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+.card-paragraph
+{
+    align-self: center;
+    text-align: center;
+    font-size: 1rem;
+    width:50%;
+    margin-top: 1rem;
+}
+
+.cards
+{
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:1rem;
+   
+    height:90vh;
+    width:50%;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width:768px) {
+    .cards
+{
+    
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap:1rem;
+   
+    height:90vh;
+    width:50%;
+    align-self: center;
+    margin-top: 1rem;
+}
+}
+
+
+
+.icon
+{
+    width: 5%;
+    height:30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8rem;
+}
+
+
+
+#card
+{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    border-radius: 0.3rem;
+    box-shadow: 0px 4px 8px black;
+    
+
+}
+
+.feature-info
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70%;
+    color: white;
+
+}
+
+.feature-description
+{
+    text-align: center;
+    padding: 1rem;
+}
+
+.feature-title
+{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card1
+{
+    background-color: skyblue;
+}
+
+.card2
+{
+    background-color: hotpink;
+}
+
+.card3
+{
+    background-color: rgb(179, 179, 65);
+}
+
+.card4
+{
+    background-color: rgb(52, 201, 201);
+}
+
+.card5
+{
+    background-color: green;
+}
+
+.card6
+{
+    background-color: rgb(68, 12, 119);
+}
+
+.testimonialsection
+{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonialheading
+{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    
+}
+
+.testimonial
+{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    align-self: center;
+    width:70%;
+    height: 40vh;
+}
+
+.testimonial-content
+{
+    
+    height: 50%;
+    border-radius: 0.3rem;
+    box-shadow: 0px 4px 8px black;
+    transition: transform 0.5s ease;
+}
+
+.testimonial-content:hover
+{
+    transform: scale(1.02);
+    border: 1px solid blue;
+}
+
+
+.testimonial-contentpara
+{
+    
+    height:40%;
+    width:100%;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 1.2rem;
+}
+
+.testimonial-contentimg
+{
+    
+    height:28%;
+    padding: 0.2rem;
+    display: flex;
+    margin-left: 8.4rem;
+}
+
+.testimonial-contentname
+{
+    
+    height: 10%;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0.2rem;
+    color: blue;
+}
+
+.testimonial-contentposition
+{
+    
+    height: 21%;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.newslettercontainer
+{
+    display: flex;
+    justify-content: center;
+}
+.newslettersection
+{
+    background-color:rgb(216, 210, 210);
+
+    display: flex;
+    width: 75%;
+    border-radius: 0.5rem;
+}
+
+.newsletterimg
+{
+    width:50%;
+    display: none;
+    height: 20rem;
+    
+
+}
+
+.newsletterimg1
+{
+    width:100%;
+    height: 20rem;
+    border-top-left-radius: 0.5rem ;
+    border-bottom-left-radius:0.5rem ;
+
+}
+
+.newsletterinfo
+{
+    width: 100%;
+    height: 20rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:0.5rem;
+    padding-left: 2rem;
+}
+
+.newsletterheading
+{
+
+    font-size: 2.5rem;
+    color: blue;
+
+}
+
+
+.email
+{
+    height: 2rem;
+}
+
+.terms
+{
+    display: flex;
+    font-size: 0.7rem;
+}
+
+.emailbtn
+{
+    background-color: blue;
+    height: 100%;
+    width:5rem;
+}
+
+.emailtext
+{
+    height: 100%;
+}
+
+.terms a
+{
+    color:blue;
+}
+
+@media screen and (min-width: 768px)
+{
+    .newsletterimg
+    {
+        display: block;
+    }
+    .newsletterinfo
+    {
+        width: 50%;
+    }
+}
+
+.footersection
+{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    height: 80vh;
+}
+
+.footer1
+{
+    width:80%;
+    height: 65%;
+    display: flex;
+}
+
+
+
+.footer2
+{
+    text-align: center;
+    height: 10%;
+    width:80%;
+}
+
+.connect
+{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-grid
+{
+    width: 60%;
+    margin-left: 10%;
+}
+
+.connect-header
+{
+    display: flex;
+    margin: 1rem;
+    margin-top: 2rem;
+}
+
+#connect-headerimg
+{
+    width:1.9rem;
+    margin-right:0.5rem;
+}
+
+#connect-headerh1
+{
+    font-size: 1.8rem;
+}
+
+.connect-para
+{
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+.connect-links
+{
+    margin-left: 0.5rem;
+}
+
+.connect-links img
+{
+    height: 1.7rem;
+    width: 1.7rem;
+    margin-left: 0.5rem;
+}
+
+.footer-grid
+{
+    margin-top: 1.6rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:1rem;
+}
+
+.footer-grid li
+{
+    list-style: none;
+}
+
+.footer-grid-heading
+{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+
+.footer-links-list
+{
+    display:flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 900px)
+{
+    .footersection
+    {
+        height: 200vh;
+    }
+    .footer1
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-grid
+    {
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width:768px) 
+{
+        .footer-grid
+        {
+            grid-template-columns: repeat(2,1fr);
+        }
+}
+

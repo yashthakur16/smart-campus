@@ -1,0 +1,5 @@
+package com.grey.smartCampus.Controller;
+
+public class TeacherController {
+
+}

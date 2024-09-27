@@ -1,0 +1,7 @@
+package com.grey.smartCampus.Service;
+
+
+@service
+public class StudentService {
+
+}

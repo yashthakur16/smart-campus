@@ -1,0 +1,69 @@
+package com.grey.smartCampus.Service;
+
+import com.grey.smartCampus.Model.Attendance;
+import com.grey.smartCampus.Model.Student;
+import com.grey.smartCampus.Repository.AttendanceRepository;
+import com.grey.smartCampus.Repository.StudentRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
+
+@Service
+public class AttendanceService {
+
+    @Autowired
+    private AttendanceRepository attendanceRepository;
+
+    @Autowired
+    private StudentRepository studentRepository;
+
+    // Get attendance by student ID
+    public List<Attendance> getAttendanceByStudent(Long studentId) {
+        Optional<Student> student = studentRepository.findById(studentId);
+        return student.map(attendanceRepository::findByStudent).orElse(null);
+    }
+
+    // Create a new attendance record
+    public Attendance createAttendance(Attendance attendance) {
+        return attendanceRepository.save(attendance);
+    }
+
+    // Update existing attendance
+    public Attendance updateAttendance(Long attendanceId, Attendance attendanceDetails) {
+        Optional<Attendance> attendanceOptional = attendanceRepository.findById(attendanceId);
+        if (attendanceOptional.isPresent()) {
+            Attendance existingAttendance = attendanceOptional.get();
+
+            // Updating fields
+            existingAttendance.setWt_attended(attendanceDetails.getWt_attended());
+            existingAttendance.setWt_total(attendanceDetails.getWt_total());
+            existingAttendance.setDbms_attended(attendanceDetails.getDbms_attended());
+            existingAttendance.setDbms_total(attendanceDetails.getDbms_total());
+            existingAttendance.setCn_attended(attendanceDetails.getCn_attended());
+            existingAttendance.setCn_total(attendanceDetails.getCn_total());
+            existingAttendance.setAi_attended(attendanceDetails.getAi_attended());
+            existingAttendance.setAi_total(attendanceDetails.getAi_total());
+
+            return attendanceRepository.save(existingAttendance);
+        } else {
+            return null;
+        }
+    }
+
+    // Get all attendance records
+    public List<Attendance> getAllAttendance() {
+        return attendanceRepository.findAll();
+    }
+
+    // Delete attendance by ID
+    public boolean deleteAttendance(Long attendanceId) {
+        Optional<Attendance> attendanceOptional = attendanceRepository.findById(attendanceId);
+        if (attendanceOptional.isPresent()) {
+            attendanceRepository.deleteById(attendanceId);
+            return true;
+        }
+        return false;
+    }
+}

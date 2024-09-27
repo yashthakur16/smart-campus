@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Page</title>
+    <link rel="stylesheet" href="attendance.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js library -->
+</head>
+<body>
+    <div class="container">
+        <h1>Attendance Details</h1>
+        <div id="student-info" class="info-box"></div>
+        <canvas id="attendanceChart" width="400" height="200"></canvas>
+        <div class="overall-attendance">
+            <h3>Overall Attendance</h3>
+            <p id="attendance-percentage"></p>
+        </div>
+    </div>
+    <script src="attendance.js"></script>
+</body>
+</html>

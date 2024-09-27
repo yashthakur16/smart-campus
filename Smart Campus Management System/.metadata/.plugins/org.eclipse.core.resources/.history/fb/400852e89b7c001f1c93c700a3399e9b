@@ -1,0 +1,19 @@
+package com.grey.smartCampus.Service;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.HttpServerErrorException;
+
+import com.grey.smartCampus.Model.Student;
+
+@Service
+public class StudentService 
+{
+
+	public ResponseEntity<String> addStudent(Student s) {
+		
+		return new ResponseEntity<>("added Successfuly",HttpStatus.OK);
+	}
+	
+}

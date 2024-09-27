@@ -1,0 +1,14 @@
+package com.grey.smartCampus.Model;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import jakarta.persistence.Entity;
+
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+@Entity
+public class LoginDetails 
+{
+	private String role;
+	private String username;
+	private String password;
+}

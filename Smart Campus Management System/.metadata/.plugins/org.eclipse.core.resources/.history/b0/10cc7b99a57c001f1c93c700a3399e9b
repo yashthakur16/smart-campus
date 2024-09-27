@@ -1,0 +1,26 @@
+package com.grey.smartCampus.Controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.grey.smartCampus.Model.Attendance;
+import com.grey.smartCampus.Service.AttendanceService;
+
+@RestController
+@RequestMapping("/attendance")
+public class AttendanceController 
+{
+	@Autowired
+	AttendanceService as;
+	
+	@GetMapping("/getById/{id}")
+	public List<Attendance> getAttendanceByid(@PathVariable int ids)
+	{
+		
+	}
+}

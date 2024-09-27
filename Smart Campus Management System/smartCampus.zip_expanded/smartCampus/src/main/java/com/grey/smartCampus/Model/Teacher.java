@@ -1,0 +1,84 @@
+package com.grey.smartCampus.Model;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+@Entity
+public class Teacher {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int teacher_id;
+
+    private String name;
+
+    private String phone_number;
+
+    private String email;
+
+    private String address;
+
+    private  String classes_teaches; 
+
+	public int getTeacher_id() {
+		return teacher_id;
+	}
+
+	public void setTeacher_id(int teacher_id) {
+		this.teacher_id = teacher_id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getPhone_number() {
+		return phone_number;
+	}
+
+	public void setPhone_number(String phone_number) {
+		this.phone_number = phone_number;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getClasses_teaches() {
+		return classes_teaches;
+	}
+
+	public void setClasses_teaches(String classes_teaches) {
+		this.classes_teaches = classes_teaches;
+	}
+
+	@Override
+	public String toString() {
+		return "Teacher [teacher_id=" + teacher_id + ", name=" + name + ", phone_number=" + phone_number + ", email="
+				+ email + ", address=" + address + ", classes_teaches=" + classes_teaches + "]";
+	}
+
+    
+}

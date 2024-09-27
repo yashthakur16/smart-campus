@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Generator</title>
+  <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Left Half: Input Section -->
+    <div class="input-section">
+      <div class="card">
+        <h2 class="title">Resume Input</h2>
+        <form id="resume-form">
+          <div class="form-group">
+            <label for="skills">Skills (comma separated)</label>
+            <input type="text" id="skills" placeholder="e.g., JavaScript, React, Node.js">
+          </div>
+          
+          <div class="form-group">
+            <label for="experience">Job Experience (comma separated)</label>
+            <input type="text" id="experience" placeholder="e.g., Software Engineer at XYZ, Intern at ABC">
+          </div>
+          
+          <button type="button" class="btn" id="generate-btn">Generate Resume</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Right Half: LaTeX Output Section -->
+    <div class="output-section">
+      <div class="card">
+        <h2 class="title">Generated LaTeX Resume</h2>
+        <pre id="latex-output">Your LaTeX resume will appear here.</pre>
+      </div>
+    </div>
+  </div>
+
+  <script src="resume.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+package com.grey.smartCampus.Service;
+
+
+
+@Service
+public class AttendanceService {
+
+   
+    
+}

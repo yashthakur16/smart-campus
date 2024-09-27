@@ -1,0 +1,5 @@
+package com.grey.smartCampus.Repository;
+
+public interface Attendance {
+
+}

@@ -1,0 +1,14 @@
+package com.grey.smartCampus.Service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class LoginDetailsService 
+{
+
+	public boolean checkLogin(String username, String password) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+}
