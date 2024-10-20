@@ -65,7 +65,6 @@ function renderAttendanceData(data) {
             }
         }
     });
-
     // Display overall attendance percentage
     const attendancePercentageDiv = document.getElementById("attendance-percentage");
     attendancePercentageDiv.innerHTML = `Overall Attendance Percentage: ${data.overallAttendancePercentage}%`;
